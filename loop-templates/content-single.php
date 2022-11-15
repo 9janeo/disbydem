@@ -37,16 +37,16 @@ defined( 'ABSPATH' ) || exit;
 
 	<footer class="entry-footer">
 		<?php
+			$meta = $post->video_info;
 			$url = get_field('video_link');
-			if ($url) :
-				$yt_meta = get_post_meta( $post->ID ,'video_info')[0];
+			$yt_meta = get_post_meta( $post->ID ,'video_info')[0];
+			if ($yt_meta) :
 				$thumb = $yt_meta->thumbnails->high->url;
 				$title = $yt_meta->title;
-				$desc = $yt_meta->description;
-				
+				$desc = $yt_meta->description;				
 				$url_pattern = '/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/';   
 				$desc= preg_replace($url_pattern, '<a href="$0" target="_blank">$0</a>', $desc);
-		?>
+			?>
 			<div class="yt-meta card">
 				<a href="<?php echo get_field('video_link')?>" target="_blank"><img class="card-img-top" src="<?php echo $thumb ?>" /></a>
 				<div class="card-body">
