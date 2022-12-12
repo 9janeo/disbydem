@@ -39,11 +39,12 @@ defined( 'ABSPATH' ) || exit;
 		<?php
 			$meta = $post->video_info;
 			$url = get_field('video_link');
-			$yt_meta = get_post_meta( $post->ID ,'video_info')[0];
-			if ($yt_meta) :
+			$vid_exists = metadata_exists('post', $post->ID, 'video_info');
+			if ($vid_exists) :
+				$yt_meta = get_post_meta( $post->ID ,'video_info')[0];
 				$thumb = $yt_meta->thumbnails->high->url;
 				$title = $yt_meta->title;
-				$desc = $yt_meta->description;				
+				$desc = $yt_meta->description;
 				$url_pattern = '/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/';   
 				$desc= preg_replace($url_pattern, '<a href="$0" target="_blank">$0</a>', $desc);
 			?>

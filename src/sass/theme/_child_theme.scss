@@ -1,7 +1,3 @@
-.entry-header{
-  .entry-title {
-    a {
-      color: $dbd !important;
-    }
-  }
-}
+@import 'category.scss';
+@import 'global.scss';
+@import 'header.scss';
