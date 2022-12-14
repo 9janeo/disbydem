@@ -14560,6 +14560,13 @@ a {
   aspect-ratio: 25/18;
 }
 
+#wrapper-hero {
+  background-color: #000;
+}
+#wrapper-hero figure img {
+  margin-bottom: unset;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

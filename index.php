@@ -20,6 +20,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <?php if ( is_front_page() && is_home() ) : ?>
+	<!-- Load Hero -->
+	<div class="banner">Show my hero, where's my hero?!</div>
 	<?php get_template_part( 'global-templates/hero' ); ?>
 <?php endif; ?>
 
