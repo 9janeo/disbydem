@@ -12,28 +12,20 @@ defined( 'ABSPATH' ) || exit;
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
-
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<div class="entry-meta">
-
+		<div class="entry-meta bg-secondary">
 			<?php understrap_posted_on(); ?>
-
-		</div><!-- .entry-meta -->
-
-
+		</div>
 	</header><!-- .entry-header -->
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
-
 		<?php
-		the_content();
-		understrap_link_pages();
+			the_content();
+			understrap_link_pages();
 		?>
-
-	</div><!-- .entry-content -->
+	</div>
 
 	<footer class="entry-footer">
 		<?php
@@ -58,7 +50,7 @@ defined( 'ABSPATH' ) || exit;
 			</div>
 		<?php endif; ?>
 
-		<?php understrap_entry_footer(); ?>
+		<?php // understrap_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

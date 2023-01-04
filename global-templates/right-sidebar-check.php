@@ -9,7 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-</div><!-- #closing the primary container from /global-templates/left-sidebar-check.php -->
+</div><!-- close the primary container -->
 
 <?php
 $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
