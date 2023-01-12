@@ -14471,10 +14471,8 @@ figure.woocommerce-product-gallery__wrapper {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-#archive-wrapper #primary.content-area #main .posts-list {
+#archive-wrapper #primary.content-area #main .posts-list .list-item {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
 }
 #archive-wrapper #primary.content-area #main .posts-list article {
   border: solid 1px #2f2f2f;

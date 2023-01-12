@@ -37,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</header><!-- .page-header -->
 					<div class="posts-list row">
 						<?php while ( have_posts() ) { ?>
-							<div class="col-lg-4 col-md-6">
+							<div class="list-item col-lg-4 col-md-6">
 								<?php the_post(); 
 								get_template_part( 'loop-templates/content', 'card' ); ?>
 							</div>

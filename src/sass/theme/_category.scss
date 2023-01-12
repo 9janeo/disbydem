@@ -11,11 +11,10 @@
         }
       }
       .posts-list {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        .list-item {
+          display: flex;
+        }
         article {
-          // padding: 1em;
           border: solid 1px $shade;
           border-radius: 5px;
         }
