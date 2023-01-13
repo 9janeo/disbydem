@@ -10,23 +10,17 @@
           text-align: center;
         }
       }
-      .posts-list {
+      .post-list {
         .list-item {
           display: flex;
+          align-self: stretch;
         }
         article {
           border: solid 1px $shade;
           border-radius: 5px;
         }
         .post {
-          flex: 1 1 100%;
           margin-bottom: 1.5rem;
-          @include media-breakpoint-up(md) {
-            flex: 1 1 50%;
-          }
-          @include media-breakpoint-up(lg) {
-            flex: 1 1 33.333333%;
-          }
           .post-thumbnail {
             margin-bottom: 1.5rem;
             .post-thumbnail-inner {

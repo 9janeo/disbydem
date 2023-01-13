@@ -1,0 +1,21 @@
+section.page-block{
+  margin: 1rem 0;
+  padding: 0.4rem;
+
+  .header {
+    margin: 1rem 0;
+  }
+
+  .post-list {
+    margin-bottom: 1rem;
+    .list-item {
+      display: flex;
+      align-items: stretch;
+      .post{
+        border: solid 1px #2f2f2f;
+        border-radius: 5px;
+        .entry-meta { display: none;}
+      }
+    }
+  }
+}

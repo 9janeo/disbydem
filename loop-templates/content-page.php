@@ -37,3 +37,7 @@ defined( 'ABSPATH' ) || exit;
 	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->
+
+<?php 
+	get_template_part('acf-templates/page', 'block');
+?>
