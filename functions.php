@@ -114,3 +114,27 @@ function dis_by_dem_video_info($post_ID, $post){
 	endif;
 }
 add_action( 'save_post','dis_by_dem_video_info', 10, 2);
+
+if( function_exists('acf_add_options_page') ) {
+    
+	acf_add_options_page(array(
+			'page_title'    => 'Theme Settings',
+			'menu_title'    => 'Theme Settings',
+			'menu_slug'     => 'theme-settings',
+			'capability'    => 'edit_posts',
+			'redirect'      => false
+	));
+	
+	acf_add_options_sub_page(array(
+			'page_title'    => 'Post Card Settings',
+			'menu_title'    => 'Cover',
+			'parent_slug'   => 'theme-settings',
+	));
+	
+	acf_add_options_sub_page(array(
+			'page_title'    => 'Footer Settings',
+			'menu_title'    => 'Footer',
+			'parent_slug'   => 'theme-settings',
+	));
+	
+}

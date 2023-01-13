@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="list-item col-lg-4 col-md-6">
 								<?php
 									set_query_var('class', 'archive-item');
-									the_post(); 
+									the_post();
 									get_template_part( 'loop-templates/content', 'card' ); ?>
 							</div>
 						<?php } ?>
