@@ -35,7 +35,7 @@
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
-  --bs-dark: #212529;
+  --bs-dark: #111;
   --bs-primary-rgb: 85, 51, 255;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -43,7 +43,7 @@
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
+  --bs-dark-rgb: 17, 17, 17;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -1877,15 +1877,15 @@ progress {
 }
 
 .table-dark {
-  --bs-table-bg: #212529;
-  --bs-table-striped-bg: #2c3034;
+  --bs-table-bg: #111;
+  --bs-table-striped-bg: #1d1d1d;
   --bs-table-striped-color: #fff;
-  --bs-table-active-bg: #373b3e;
+  --bs-table-active-bg: #292929;
   --bs-table-active-color: #fff;
-  --bs-table-hover-bg: #323539;
+  --bs-table-hover-bg: #232323;
   --bs-table-hover-color: #fff;
   color: #fff;
-  border-color: #373b3e;
+  border-color: #292929;
 }
 
 .table-responsive {
@@ -3949,32 +3949,32 @@ textarea.form-control-lg {
 
 .btn-dark {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #111;
+  border-color: #111;
 }
 .btn-dark:hover {
   color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
+  background-color: #0e0e0e;
+  border-color: #0e0e0e;
 }
 .btn-check:focus + .btn-dark, .btn-dark:focus {
   color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
-  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+  background-color: #0e0e0e;
+  border-color: #0e0e0e;
+  box-shadow: 0 0 0 0.25rem rgba(53, 53, 53, 0.5);
 }
 .btn-check:checked + .btn-dark, .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active, .show > .btn-dark.dropdown-toggle {
   color: #fff;
-  background-color: #1a1e21;
-  border-color: #191c1f;
+  background-color: #0e0e0e;
+  border-color: #0d0d0d;
 }
 .btn-check:checked + .btn-dark:focus, .btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus, .show > .btn-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(53, 53, 53, 0.5);
 }
 .btn-dark:disabled, .btn-dark.disabled {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #111;
+  border-color: #111;
 }
 
 .btn-outline-primary, .wpcf7 input[type=submit] {
@@ -4153,27 +4153,27 @@ textarea.form-control-lg {
 }
 
 .btn-outline-dark {
-  color: #212529;
-  border-color: #212529;
+  color: #111;
+  border-color: #111;
 }
 .btn-outline-dark:hover {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #111;
+  border-color: #111;
 }
 .btn-check:focus + .btn-outline-dark, .btn-outline-dark:focus {
-  box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(17, 17, 17, 0.5);
 }
 .btn-check:checked + .btn-outline-dark, .btn-check:active + .btn-outline-dark, .btn-outline-dark:active, .btn-outline-dark.active, .btn-outline-dark.dropdown-toggle.show {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #111;
+  border-color: #111;
 }
 .btn-check:checked + .btn-outline-dark:focus, .btn-check:active + .btn-outline-dark:focus, .btn-outline-dark:active:focus, .btn-outline-dark.active:focus, .btn-outline-dark.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(17, 17, 17, 0.5);
 }
 .btn-outline-dark:disabled, .btn-outline-dark.disabled {
-  color: #212529;
+  color: #111;
   background-color: transparent;
 }
 
@@ -5750,12 +5750,12 @@ textarea.form-control-lg {
 }
 
 .alert-dark {
-  color: #141619;
-  background-color: #d3d3d4;
-  border-color: #bcbebf;
+  color: #0a0a0a;
+  background-color: #cfcfcf;
+  border-color: #b8b8b8;
 }
 .alert-dark .alert-link {
-  color: #101214;
+  color: #080808;
 }
 
 @keyframes progress-bar-stripes {
@@ -6124,17 +6124,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-dark {
-  color: #141619;
-  background-color: #d3d3d4;
+  color: #0a0a0a;
+  background-color: #cfcfcf;
 }
 .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
-  color: #141619;
-  background-color: #bebebf;
+  color: #0a0a0a;
+  background-color: #bababa;
 }
 .list-group-item-dark.list-group-item-action.active {
   color: #fff;
-  background-color: #141619;
-  border-color: #141619;
+  background-color: #0a0a0a;
+  border-color: #0a0a0a;
 }
 
 .btn-close {
@@ -7190,10 +7190,10 @@ textarea.form-control-lg {
 }
 
 .link-dark {
-  color: #212529;
+  color: #111;
 }
 .link-dark:hover, .link-dark:focus {
-  color: #1a1e21;
+  color: #0e0e0e;
 }
 
 .ratio {
@@ -7615,7 +7615,7 @@ textarea.form-control-lg {
 }
 
 .border-dark {
-  border-color: #212529 !important;
+  border-color: #111 !important;
 }
 
 .border-white {
@@ -14471,43 +14471,31 @@ figure.woocommerce-product-gallery__wrapper {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-#archive-wrapper #primary.content-area #main .posts-list {
+#archive-wrapper #primary.content-area #main .post-list .list-item {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  align-self: stretch;
 }
-#archive-wrapper #primary.content-area #main .posts-list article {
+#archive-wrapper #primary.content-area #main .post-list article {
   border: solid 1px #2f2f2f;
   border-radius: 5px;
 }
-#archive-wrapper #primary.content-area #main .posts-list .post {
-  flex: 1 1 100%;
+#archive-wrapper #primary.content-area #main .post-list .post {
   margin-bottom: 1.5rem;
 }
-@media (min-width: 768px) {
-  #archive-wrapper #primary.content-area #main .posts-list .post {
-    flex: 1 1 50%;
-  }
-}
-@media (min-width: 992px) {
-  #archive-wrapper #primary.content-area #main .posts-list .post {
-    flex: 1 1 33.333333%;
-  }
-}
-#archive-wrapper #primary.content-area #main .posts-list .post .post-thumbnail {
+#archive-wrapper #primary.content-area #main .post-list .post .post-thumbnail {
   margin-bottom: 1.5rem;
 }
-#archive-wrapper #primary.content-area #main .posts-list .post .post-thumbnail .post-thumbnail-inner {
+#archive-wrapper #primary.content-area #main .post-list .post .post-thumbnail .post-thumbnail-inner {
   position: relative;
   overflow: hidden;
 }
-#archive-wrapper #primary.content-area #main .posts-list .post .post-thumbnail .post-thumbnail-inner .post-thumbnail-image {
+#archive-wrapper #primary.content-area #main .post-list .post .post-thumbnail .post-thumbnail-inner .post-thumbnail-image {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
 }
-#archive-wrapper #primary.content-area #main .posts-list .post .post-thumbnail .post-thumbnail-inner .post-thumbnail-content {
+#archive-wrapper #primary.content-area #main .post-list .post .post-thumbnail .post-thumbnail-inner .post-thumbnail-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -14519,18 +14507,34 @@ figure.woocommerce-product-gallery__wrapper {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
-#archive-wrapper #primary.content-area #main .posts-list .post .post-thumbnail .post-thumbnail-inner .post-thumbnail-content .post-thumbnail-title {
+#archive-wrapper #primary.content-area #main .post-list .post .post-thumbnail .post-thumbnail-inner .post-thumbnail-content .post-thumbnail-title {
   font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
   text-align: center;
 }
-#archive-wrapper #primary.content-area #main .posts-list .post .entry-header .entry-title a {
+#archive-wrapper #primary.content-area #main .post-list .post .entry-header .entry-title a {
   color: #ce2d19 !important;
 }
 
-a {
-  color: #ce2d19 !important;
+#wrapper-footer {
+  background-color: #333;
+  color: #fff;
+}
+
+nav.post-navigation {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #cacaca;
+}
+nav.post-navigation .nav-links span {
+  max-width: 50%;
+}
+nav.post-navigation .nav-links span.previous-nav {
+  border-right: solid 1px #aaa;
+}
+nav.post-navigation .nav-links span a > i {
+  font-weight: bold;
 }
 
 .entry-header .entry-title a {
@@ -14541,11 +14545,15 @@ a {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 #wrapper-navbar #main-nav {
-  background-color: #2f2f2f !important;
+  background-color: #111 !important;
   padding-bottom: 0px;
 }
-#wrapper-navbar #main-nav #navbarNavDropdown {
-  align-self: flex-end;
+#wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item a.nav-link, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item a.nav-link, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item a.nav-link, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item a.nav-link {
+  color: #ce2d19;
+}
+#wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .dropdown-menu.show, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .dropdown-menu.show, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .dropdown-menu.show, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .dropdown-menu.show {
+  color: #ce2d19;
+  background-color: #111;
 }
 #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .nav-link, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .nav-link, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .nav-link, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .nav-link {
   border-bottom: transparent 3px solid;
@@ -14558,6 +14566,35 @@ a {
   max-height: 60px;
   width: auto;
   aspect-ratio: 25/18;
+}
+
+#wrapper-hero {
+  background-color: #000;
+}
+#wrapper-hero figure img {
+  margin-bottom: unset;
+}
+
+section.page-block {
+  margin: 1rem 0;
+  padding: 0.4rem;
+}
+section.page-block .header {
+  margin: 1rem 0;
+}
+section.page-block .post-list {
+  margin-bottom: 1rem;
+}
+section.page-block .post-list .list-item {
+  display: flex;
+  align-items: stretch;
+}
+section.page-block .post-list .list-item .post {
+  border: solid 1px #2f2f2f;
+  border-radius: 5px;
+}
+section.page-block .post-list .list-item .post .entry-meta {
+  display: none;
 }
 
 .has-blue-color,
@@ -14762,12 +14799,12 @@ a {
 
 .has-dark-color,
 .has-dark-color:visited {
-  color: #212529;
+  color: #111;
 }
 
 .has-dark-background-color {
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #111;
+  border-color: #111;
 }
 
 figure.wp-block-image {

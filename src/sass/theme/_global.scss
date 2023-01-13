@@ -1,3 +1,16 @@
-a {
-  color: $dbd !important;
+nav.post-navigation{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #cacaca;
+  .nav-links{
+    span{
+      max-width: 50%;
+      &.previous-nav{
+        border-right: solid 1px #aaa;
+      }
+      a>i{
+        font-weight: bold;
+      }
+    }
+  }
 }

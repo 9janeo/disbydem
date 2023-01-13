@@ -35,11 +35,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 						the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
 					</header><!-- .page-header -->
-					<div class="posts-list">
+					<div class="post-list row">
 						<?php while ( have_posts() ) { ?>
-							<div class="col-lg-4 col-md-6">
-								<?php the_post(); 
-								get_template_part( 'loop-templates/content', 'card' ); ?>
+							<div class="list-item col-lg-4 col-md-6">
+								<?php
+									set_query_var('class', 'archive-item');
+									the_post(); 
+									get_template_part( 'loop-templates/content', 'card' ); ?>
 							</div>
 						<?php } ?>
 					</div>
