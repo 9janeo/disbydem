@@ -2,13 +2,7 @@
   #primary.content-area {
     #main {
       .page-header {
-        .page-title {
-          font-size: 2.5rem;
-          font-weight: 700;
-          line-height: 1.2;
-          margin-bottom: 1.5rem;
-          text-align: center;
-        }
+        @include bound;
       }
       .post-list {
         .list-item {
@@ -16,7 +10,7 @@
           align-self: stretch;
         }
         article {
-          border: solid 1px $shade;
+          border: solid 1px $lightshade;
           border-radius: 5px;
         }
         .post {
