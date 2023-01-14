@@ -14464,12 +14464,10 @@ figure.woocommerce-product-gallery__wrapper {
   display: block;
 }
 
-#archive-wrapper #primary.content-area #main .page-header .page-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-  text-align: center;
+#archive-wrapper #primary.content-area #main .page-header {
+  border: #ccc 1px solid;
+  border-radius: 5px;
+  padding: 1rem;
 }
 #archive-wrapper #primary.content-area #main .post-list .list-item {
   display: flex;
@@ -14522,6 +14520,16 @@ figure.woocommerce-product-gallery__wrapper {
   color: #fff;
 }
 
+.page-header {
+  margin-bottom: 1.5rem;
+}
+.page-header .page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
 nav.post-navigation {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -14539,6 +14547,30 @@ nav.post-navigation .nav-links span a > i {
 
 .entry-title.card-title {
   font-size: 1.4rem;
+}
+
+blockquote, .wp-block-quote {
+  border-radius: 2rem;
+  position: relative;
+  background: #ccc;
+  padding: 2rem;
+}
+blockquote:after, .wp-block-quote:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #ccc;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10px;
+  margin-bottom: -20px;
+}
+blockquote cite, .wp-block-quote cite {
+  color: #5a0b00;
 }
 
 .list-item .card .card-img-top {
@@ -14565,6 +14597,9 @@ nav.post-navigation .nav-links span a > i {
   background-color: #111 !important;
   padding-bottom: 0px;
 }
+#wrapper-navbar #main-nav #navbarNavDropdown {
+  align-self: flex-end;
+}
 #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item a.nav-link, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item a.nav-link, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item a.nav-link, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item a.nav-link {
   color: #ce2d19;
 }
@@ -14572,10 +14607,16 @@ nav.post-navigation .nav-links span a > i {
   color: #ce2d19;
   background-color: #111;
 }
-#wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .nav-link, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .nav-link, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .nav-link, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .nav-link {
+#wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .dropdown-menu.show .dropdown-item, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .dropdown-menu.show .dropdown-item, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .dropdown-menu.show .dropdown-item, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .dropdown-menu.show .dropdown-item {
+  color: #ce2d19;
+}
+#wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .dropdown-menu.show .dropdown-item:hover, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .dropdown-menu.show .dropdown-item:active, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .dropdown-menu.show .dropdown-item:focus, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .dropdown-menu.show .dropdown-item:hover, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .dropdown-menu.show .dropdown-item:active, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .dropdown-menu.show .dropdown-item:focus, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .dropdown-menu.show .dropdown-item:hover, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .dropdown-menu.show .dropdown-item:active, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .dropdown-menu.show .dropdown-item:focus, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .dropdown-menu.show .dropdown-item:hover, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .dropdown-menu.show .dropdown-item:active, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .dropdown-menu.show .dropdown-item:focus {
+  background-color: #f2f2f2;
+}
+#wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .nav-link, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .dropdown-item, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .nav-link, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .dropdown-item, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .nav-link, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .dropdown-item, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .nav-link, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .dropdown-item {
   border-bottom: transparent 3px solid;
 }
-#wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .nav-link:hover, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .nav-link:hover, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .nav-link:hover, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .nav-link:hover {
+#wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .nav-link:hover, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .nav-link:active, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .nav-link:focus, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .dropdown-item:hover, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .dropdown-item:active, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .menu-item .dropdown-item:focus, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .nav-link:hover, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .nav-link:active, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .nav-link:focus, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .dropdown-item:hover, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .dropdown-item:active, #wrapper-navbar #main-nav #navbarNavDropdown #main-menu .nav-item .dropdown-item:focus, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .nav-link:hover, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .nav-link:active, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .nav-link:focus, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .dropdown-item:hover, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .dropdown-item:active, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .menu-item .dropdown-item:focus, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .nav-link:hover, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .nav-link:active, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .nav-link:focus, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .dropdown-item:hover, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .dropdown-item:active, #wrapper-navbar #main-nav #navbarNavDropdown .navbar-nav .nav-item .dropdown-item:focus {
   color: #ce2d19;
   border-bottom: 3px #ce2d19 solid;
 }
@@ -14590,6 +14631,40 @@ nav.post-navigation .nav-links span a > i {
 }
 #wrapper-hero figure img {
   margin-bottom: unset;
+}
+
+#page-wrapper .entry-header {
+  width: 100%;
+  min-height: 100px;
+  max-height: 300px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  padding: 2em;
+  position: relative;
+}
+#page-wrapper .entry-header .banner {
+  border: #ccc 1px solid;
+  border-radius: 5px;
+  padding: 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+  filter: opacity(50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: -webkit-fill-available;
+}
+#page-wrapper .entry-header .entry-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 section.page-block {
