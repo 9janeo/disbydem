@@ -14515,8 +14515,8 @@ figure.woocommerce-product-gallery__wrapper {
   color: #ce2d19 !important;
 }
 
-#wrapper-footer {
-  background-color: #333;
+#wrapper-footer, #wrapper-footer-full {
+  background-color: #111;
   color: #fff;
 }
 

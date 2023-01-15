@@ -37,7 +37,7 @@ if ( ! function_exists( 'understrap_add_site_info' ) ) {
 				/* translators: 1: Theme name, 2: Theme author */
 				esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ),
 				$the_theme->get( 'Name' ),
-				'<a href="' . esc_url( __( 'https://clearcutcomms.ca', 'ClearCutMB' ) ) . '">clearcutcomms.ca</a>'
+				'<a href="' . esc_url( __( 'https://clearcutcomms.ca', 'ClearCutMB' ) ) . '" target="_blank">clearcutcomms.ca</a>'
 			),
 			sprintf( // WPCS: XSS ok.
 				/* translators: Theme version */

@@ -20,6 +20,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>">
 
 		<div class="row">
+			<?php 
+				$social_links = get_field('social_links', 'option');
+				if($social_links) :
+					foreach($social_links as $social) {
+						$link = $social['link'];
+					?>
+						<a href="<?php echo $link['url']?>" target="<?= $link['target'] ?>"><?php echo $link['title']?></a>
+					<?php
+					}
+				endif;
+			?>
 
 			<div class="col-md-12">
 

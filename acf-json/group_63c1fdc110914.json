@@ -3,11 +3,11 @@
     "title": "Theme Footer Options",
     "fields": [
         {
-            "key": "field_63c1fcf7f888a",
+            "key": "field_63c20397e518a",
             "label": "Social Links",
             "name": "social_links",
             "aria-label": "",
-            "type": "group",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,14 +16,20 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_63c1fd0df888b",
-                    "label": "Social",
-                    "name": "social",
+                    "key": "field_63c203a6e518b",
+                    "label": "Platform",
+                    "name": "platform",
                     "aria-label": "",
-                    "type": "repeater",
+                    "type": "select",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -32,53 +38,38 @@
                         "class": "",
                         "id": ""
                     },
-                    "layout": "table",
-                    "pagination": 0,
-                    "min": 0,
-                    "max": 0,
-                    "collapsed": "",
-                    "button_label": "Add Row",
-                    "rows_per_page": 20,
-                    "sub_fields": [
-                        {
-                            "key": "field_63c1fd32f888c",
-                            "label": "Platform",
-                            "name": "platform",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "parent_repeater": "field_63c1fd0df888b"
-                        },
-                        {
-                            "key": "field_63c1fd74f888d",
-                            "label": "Link",
-                            "name": "link",
-                            "aria-label": "",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "parent_repeater": "field_63c1fd0df888b"
-                        }
-                    ]
+                    "choices": {
+                        "Facebook": "Facebook",
+                        "Instagram": "Instagram",
+                        "TikTok": "TikTok",
+                        "Twitter": "Twitter",
+                        "YouTube": "YouTube"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_63c20397e518a"
+                },
+                {
+                    "key": "field_63c2044de518c",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_63c20397e518a"
                 }
             ]
         }
@@ -101,5 +92,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673657894
+    "modified": 1673659488
 }
