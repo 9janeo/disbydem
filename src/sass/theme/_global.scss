@@ -32,6 +32,7 @@ nav.post-navigation{
 }
 
 blockquote, .wp-block-quote {
+  margin: 0 0 2rem;
   @include quote;
   cite {
     color: $darkred;
@@ -43,7 +44,7 @@ blockquote, .wp-block-quote {
     .card-img-top {
       min-height: 75px;
       max-height: 275px;
-      background-size: cover;
+      background-size: contain;
       background-position: center bottom;
       background-color: #000;
       background-repeat: no-repeat;
@@ -51,6 +52,18 @@ blockquote, .wp-block-quote {
       img {
         visibility: hidden;
       }
+    }
+    h2.card-title {
+      a {
+        color: $dbd;
+        &:hover {
+          color: $darkred;
+        }
+      }
+    }
+    .card-body{
+      display: grid;
+      grid-template-rows: auto 1fr auto;
     }
   }
 }

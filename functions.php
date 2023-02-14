@@ -72,8 +72,6 @@ function understrap_default_bootstrap_version( $current_mod ) {
 }
 add_filter( 'theme_mod_understrap_bootstrap_version', 'understrap_default_bootstrap_version', 20 );
 
-
-
 /**
  * Loads javascript for showing customizer warning dialog.
  */
@@ -88,12 +86,8 @@ function understrap_child_customize_controls_js() {
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
 
-add_site_option( 'Youtube_API_key', 'AIzaSyAfiysBRyIIHIUsenOXURi2xRTRtWBn2A4' );
-
 function dis_by_dem_video_info($post_ID, $post){
-	// $meta = $post->video_info;
-	// $hostname = get_site_url();
-	$yt_key = get_site_option('Youtube_API_key');
+	$yt_key = get_field('Youtube_API_key', 'options');
 	
 	if(get_field('video_link')):
 		$url = get_field('video_link');
@@ -105,7 +99,7 @@ function dis_by_dem_video_info($post_ID, $post){
 		$code = wp_remote_retrieve_response_code($response);
 		$result = json_decode(wp_remote_retrieve_body( $response ));
 		if ($code == 200){
-			$vid_snippet = $result->items[0]->snippet;
+			$vid_snippet = json_decode($result->items[0]->snippet);
 			update_post_meta($post_ID, 'video_info', $vid_snippet);
 			// $vid_title = $vid_snippet->title;
 			// $vid_desc = $vid_snippet->description;
@@ -118,23 +112,23 @@ add_action( 'save_post','dis_by_dem_video_info', 10, 2);
 if( function_exists('acf_add_options_page') ) {
     
 	acf_add_options_page(array(
-			'page_title'    => 'Theme Settings',
-			'menu_title'    => 'Theme Settings',
-			'menu_slug'     => 'theme-settings',
-			'capability'    => 'edit_posts',
-			'redirect'      => false
+		'page_title'    => 'Theme Settings',
+		'menu_title'    => 'Theme Settings',
+		'menu_slug'     => 'theme-settings',
+		'capability'    => 'edit_posts',
+		'redirect'      => false
 	));
 	
 	acf_add_options_sub_page(array(
-			'page_title'    => 'Post Card Settings',
-			'menu_title'    => 'Cover',
-			'parent_slug'   => 'theme-settings',
+		'page_title'    => 'Post Card Settings',
+		'menu_title'    => 'Cover',
+		'parent_slug'   => 'theme-settings',
 	));
 	
 	acf_add_options_sub_page(array(
-			'page_title'    => 'Footer Settings',
-			'menu_title'    => 'Footer',
-			'parent_slug'   => 'theme-settings',
+		'page_title'    => 'Footer Settings',
+		'menu_title'    => 'Footer',
+		'parent_slug'   => 'theme-settings',
 	));
 	
 }

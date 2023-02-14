@@ -14,8 +14,14 @@ section.page-block{
       .post{
         border: solid 1px $lightshade;
         border-radius: 5px;
-        .entry-meta { display: none;}
+        .entry-footer { display: none;}
       }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .post-list {
+      gap: 1rem;
     }
   }
 }

@@ -13,10 +13,8 @@ defined( 'ABSPATH' ) || exit;
 
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<div class="entry-meta bg-secondary">
-			<?php understrap_posted_on(); ?>
-		</div>
-	</header><!-- .entry-header -->
+		<div class="entry-meta bg-secondary"><?php understrap_posted_on(); ?></div>
+	</header>
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
@@ -44,7 +42,7 @@ defined( 'ABSPATH' ) || exit;
 				<a href="<?php echo get_field('video_link')?>" target="_blank"><img class="card-img-top" src="<?php echo $thumb ?>" /></a>
 				<div class="card-body">
 					<h3 class="card-title"><a href="<?php echo get_field('video_link')?>" target="_blank"><?php echo $title ?></a></h3>
-					<p class="card-text"><?php echo $desc ?></p>
+					<p class="card-text"><?php echo apply_filters('the_content', $desc) ?></p>
 					<p class="small card-text pull-left">Published: <?php echo date("Y-m-d", strtotime($yt_meta->publishedAt)); ?></p>
 				</div>
 			</div>

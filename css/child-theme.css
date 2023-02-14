@@ -14515,6 +14515,10 @@ figure.woocommerce-product-gallery__wrapper {
   color: #ce2d19 !important;
 }
 
+#wrapper-footer-full {
+  border-top: #ce2d19 solid 1px;
+}
+
 #wrapper-footer {
   background-color: #333;
   color: #fff;
@@ -14550,6 +14554,7 @@ nav.post-navigation .nav-links span a > i {
 }
 
 blockquote, .wp-block-quote {
+  margin: 0 0 2rem;
   border-radius: 2rem;
   position: relative;
   background: #ccc;
@@ -14576,7 +14581,7 @@ blockquote cite, .wp-block-quote cite {
 .list-item .card .card-img-top {
   min-height: 75px;
   max-height: 275px;
-  background-size: cover;
+  background-size: contain;
   background-position: center bottom;
   background-color: #000;
   background-repeat: no-repeat;
@@ -14585,9 +14590,15 @@ blockquote cite, .wp-block-quote cite {
 .list-item .card .card-img-top img {
   visibility: hidden;
 }
-
-.entry-header .entry-title a {
-  color: #ce2d19 !important;
+.list-item .card h2.card-title a, .list-item .card .card-title.h2 a {
+  color: #ce2d19;
+}
+.list-item .card h2.card-title a:hover, .list-item .card .card-title.h2 a:hover {
+  color: #5a0b00;
+}
+.list-item .card .card-body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 #wrapper-navbar {
@@ -14685,8 +14696,13 @@ section.page-block .post-list .list-item .post {
   border: solid 1px #ccc;
   border-radius: 5px;
 }
-section.page-block .post-list .list-item .post .entry-meta {
+section.page-block .post-list .list-item .post .entry-footer {
   display: none;
+}
+@media only screen and (max-width: 991px) {
+  section.page-block .post-list {
+    gap: 1rem;
+  }
 }
 
 .has-blue-color,
